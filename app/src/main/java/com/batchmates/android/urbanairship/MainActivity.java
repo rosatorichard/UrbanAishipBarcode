@@ -58,4 +58,11 @@ public class MainActivity extends AppCompatActivity {
             super.onActivityResult(requestCode, resultCode, data);
         }
     }
+
+    public void async(View view) {
+
+//        TestAsynkTask testAsynkTask=new TestAsynkTask();
+//        testAsynkTask.execute();
+        new TestAsynkTask().execute();
+    }
 }

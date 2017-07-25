@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.batchmates.android.urbanairship.MainActivity">
 
     <Button
@@ -12,6 +13,11 @@
         android:onClick="scanBarcode"
         android:text="scan Barcode" />
 
+    <Button
+        android:onClick="async"
+        android:text="Start Async"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/tvScannedBarcode"

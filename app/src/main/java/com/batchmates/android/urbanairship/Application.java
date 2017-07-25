@@ -1,6 +1,7 @@
 package com.batchmates.android.urbanairship;
 
 import android.content.res.Configuration;
+import android.util.Log;
 
 import com.squareup.leakcanary.LeakCanary;
 import com.urbanairship.*;
@@ -43,6 +44,7 @@ public class Application extends android.app.Application {
             // You should not init your app in this process.
             return;
         }
+        Log.d("Leaker", "onCreate: LeakcanaryStarted");
         LeakCanary.install(this);
         // Normal app init code...
 
