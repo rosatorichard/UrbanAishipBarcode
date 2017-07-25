@@ -28,7 +28,7 @@ public class TestAsynkTask extends AsyncTask<String,Integer,String> {
             try {
                 Thread.sleep(1000);
                 Log.d(TAG, "doInBackground: "+i);
-                
+
                 publishProgress(i);
             } catch (InterruptedException e) {
                 e.printStackTrace();
